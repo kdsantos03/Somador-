@@ -1,4 +1,4 @@
 #include <stdlib.h> 
-int N; /* Declaração da variável referente ao numero de contas */
+int N=0; /* Declaração da variável referente ao numero de contas */
 /* Declaração dos valores das contas */
 int N1=100, N2=120, N3=135, N4=65; 
