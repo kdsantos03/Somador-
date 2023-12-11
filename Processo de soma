@@ -1,14 +1,13 @@
 #include <stdio.h> 
 int main(void) {
 // Declaração dos valores das contas 
-int N1=100, N2=120, N3=135, N4=65;
-int N=3; /* Declaração da variável referente ao numero de contas */
-float contas[N]= {N1,N2,N3,N4};
-float soma=0;
-int i=0; 
-for (i<N, i++){
+float N1=100, N2=120, N3=135, N4=65;
+int N=4; /* Declaração da variável referente ao numero de contas */
+float contas[4]= { N1, N2, N3, N4};
+float soma=0; 
+for (int i=0; i < N; i++){
 soma += contas[i];
 }
-printf ("Valor total das contas:%d", soma);
+printf ("Valor total das contas:%f", soma);
 return 0;
 }
