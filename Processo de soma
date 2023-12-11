@@ -1,5 +1,10 @@
-#include <stdlib.h> 
+#include <stdio.h> 
+int main(void) {
+
 int N=0; /* Declaração da variável referente ao numero de contas */
 /* Declaração dos valores das contas */
 int N1=100, N2=120, N3=135, N4=65; 
-opa
+if (N=4)
+{ int soma=N1+N2+N3+N4;
+printf ("Valor total das contas:%d", soma);}
+}
