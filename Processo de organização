@@ -1,1 +1,30 @@
-
+#include <stdio.h>
+#include <string.h>
+int main() {
+  char contas[5][80]; // Variável global, onde serão digitadas 5 palavras com um espaçamento de até 80 caracteres.
+void ordena (){ // Função criada para ordenar as palavras que serão digitadas pelo usuário.
+    int x,y,r;
+    char aux[80];
+    for ( x = 0; x <= 4; x++){   
+      for ( y = x+1; y<=4; y++){
+          r=strcmp(contas[x],contas[y]); // Função comparando duas strings.
+          if (r>0){ //troca de lugares entre uma palavra e outra, colocando-as em ordem alfabetica
+            strcpy(aux,contas[x]); //strcpy é uma função que copia string
+            strcpy(contas[x],contas[y]);
+            strcpy(contas[y],aux);
+          }    
+      }
+    }
+}
+  int x;
+  printf("Digite 5 contas: ");
+  for ( x = 0; x <= 4; x++){
+    gets(contas[x]); //Função que ler uma string
+  }
+  ordena(); // Função ordena chamada para ordenar as palavras que foram digitadas pelo usuário
+  printf("Contas em ordem alfabetica: \n");
+  for ( x = 0; x <= 4; x++){
+    puts(contas[x]); // Função para imprimir na tela as strings em ordem alfabetica
+  }
+  return 0;
+}
